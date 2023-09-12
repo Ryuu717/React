@@ -1,0 +1,41 @@
+1. New project
+	cd "directory"
+	npx create-react-app "Application name"
+	cd "Application name"
+	npm start
+
+
+2. Clone project
+	cd "directory"
+	npm install
+	npm start
+
+
+	-->Error solutions
+		code: 'ERR_OSSL_EVP_UNSUPPORTED'
+		->edit the package.json file 
+
+			"start": "react-scripts start"
+			"build": "react-scripts build"
+
+			--> 
+			"start": "react-scripts --openssl-legacy-provider start",
+			"build": "react-scripts --openssl-legacy-provider build",
+
+
+
+3. dfx
+	dfx deploy
+
+	dfx identity get-principal
+	dfx canister call "canister name" getName
+	dfx canister id "canister name"
+
+	dfx canister call "canister name" getName
+
+	-->Error solutions
+		dfx start --clean
+
+
+
+
